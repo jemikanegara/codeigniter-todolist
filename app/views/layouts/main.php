@@ -39,7 +39,7 @@
 
             <div class="span9">
             <!-- MAIN CONTENT -->
-                
+                <?php $this->load->view($main_content);?>
             </div> <!-- /span -->
         </div> <!-- /row -->
 
