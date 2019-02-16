@@ -17,7 +17,6 @@
                 <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
                 <!-- RIGHT TOP CONTENT -->
-
                 </p>
                 <ul class="nav">
                     <li><a href="#">Home</a></li>
@@ -33,6 +32,7 @@
                 <div class="well sidebar-nav">
                     <div style="margin:0 0 10px 10px;">
                     <!-- SIDEBAR CONTENT -->
+                    <?php $this->load->view('users/login');?>
                     </div>
                 </div> <!-- / .well -->
             </div> <!-- / span -->
