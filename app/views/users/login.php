@@ -1,6 +1,7 @@
 <h3>Login Form</h3>
 <?php $attributes = array('id' => 'login_form', 'class' => 'form-horizontal'); ?>
-<?php echo form_open('user/login', $attributes); ?>
+<?php echo form_open('user/login', $attributes); ?> 
+<!-- parameter 1 : controller, parameter 2 : data -->
 
 <!-- USERNAME -->
 <p>
@@ -27,6 +28,7 @@
     <?php echo form_password($data); ?>
 </p>
 
+<!-- SUBMIT -->
 <p>
     <?php 
     $data = array(  'name' => 'submit', 
