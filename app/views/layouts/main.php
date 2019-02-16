@@ -17,9 +17,13 @@
                 <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
                 <!-- RIGHT TOP CONTENT -->
-                
-                
+                <?php if ($this->session->userdata('logged_in')): ?>
+                Welcome, <?php echo $this->session->userdata('username'); ?>
+                <?php else: ?>
                 <a href="<?php echo base_url(); ?>users/register">Register</a>
+                <?php endif; ?>
+                
+               
                 </p>
                 <ul class="nav">
                     <li><a href="<?php echo base_url(); ?>">Home</a></li>
@@ -35,14 +39,14 @@
                 <div class="well sidebar-nav">
                     <div style="margin:0 0 10px 10px;">
                     <!-- SIDEBAR CONTENT -->
-                    <?php $this->load->view('users/login');?>
+                    <?php $this->load->view('users/login'); ?>
                     </div>
                 </div> <!-- / .well -->
             </div> <!-- / span -->
 
             <div class="span9">
             <!-- MAIN CONTENT -->
-                <?php $this->load->view($main_content);?>
+                <?php $this->load->view($main_content); ?>
             </div> <!-- /span -->
         </div> <!-- /row -->
 
