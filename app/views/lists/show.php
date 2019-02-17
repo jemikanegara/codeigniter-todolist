@@ -16,8 +16,7 @@
 
 <li>
     <a  onclick="return confirm('Are you sure?')" 
-        href="<?php echo base_url(); ?>
-        lists/delete/<?php echo $list->id; ?>"
+        href="<?php echo base_url(); ?>lists/delete/<?php echo $list->id; ?>"
     >
         Delete List
     </a>
